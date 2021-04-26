@@ -110,13 +110,13 @@ def parse_file(fname, edges, transform, screen, color):
             matrix_mult(t, transform)
 
         elif line=='sphere':
-            add_sphere(edges, *args, 0.1)
+            add_sphere(edges, *list(map(int,args)), step)
 
         elif line=='torus':
-            add_torus(edges, *args, 0.1)
+            add_torus(edges, *list(map(int,args)), step)
 
         elif line=='box':
-            add_box(edges, *args)
+            add_box(edges, *list(map(int,args)))
 
         elif line == 'ident':
             ident(transform)
