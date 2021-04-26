@@ -1,5 +1,3 @@
-from display import *
-from matrix import *
 from draw import *
 
 """
@@ -109,14 +107,14 @@ def parse_file(fname, edges, transform, screen, color):
                 t = make_rotZ(theta)
             matrix_mult(t, transform)
 
-        elif line=='sphere':
-            add_sphere(edges, *list(map(int,args)), step)
+        elif line == 'sphere':
+            add_sphere(edges, *list(map(int, args)), step)
 
-        elif line=='torus':
-            add_torus(edges, *list(map(int,args)), step)
+        elif line == 'torus':
+            add_torus(edges, *list(map(int, args)), step)
 
-        elif line=='box':
-            add_box(edges, *list(map(int,args)))
+        elif line == 'box':
+            add_box(edges, *list(map(int, args)))
 
         elif line == 'ident':
             ident(transform)

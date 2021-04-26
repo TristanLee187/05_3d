@@ -3,7 +3,7 @@ from matrix import *
 from math import sin, cos, pi
 
 # ====================
-# add the points for a rectagular prism whose
+# add the points for a rectangular prism whose
 # upper-left corner is (x, y, z) with width,
 # height and depth dimensions.
 # ====================
